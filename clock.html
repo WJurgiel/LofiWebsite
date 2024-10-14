@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet", href="clock.css">
+</head>
+<body>
+    <div id="rain-container">
+        <label class="switch">
+            <input type="checkbox" id="toggleRainSwitch">
+            <span class="slider"></span> 
+        </label><br>
+        <p id="addLabel">Add rain</p>
+        <input type="range" id="rainVolume" min="0" max="20" value="10">
+    </div>
+    <div id="purring-container">
+        <label class="switch">
+            <input type="checkbox" id="toggleCatSwitch">
+            <span class="slider"></span> 
+        </label>
+        <p id="addLabel">Add purring</p>
+        <input type="range" id="purringVolume" min="0" max="20" value="10">
+    </div>
+    <div id="birds-container">
+        <label class="switch">
+            <input type="checkbox" id="toggleBirdsSwitch">
+            <span class="slider"></span> 
+        </label>
+        <p id="addLabel">Add birds</p>
+        <input type="range" id="birdsVolume" min="0" max="20" value="10">
+    </div>
+   
+    <div id="clock-container">
+        <div id="clock">00:00:00</div>
+    </div>
+    <script src="clock.js"></script>
+    <div id="track-container">
+        <div id="main-volume-container">
+            <input type="range" id="mainVolume" min="0" max="20", value="10">
+        </div>
+        <div id="music-container">
+            <p>Now playing:</p>
+            <p id="title" >Title:</p>
+            <p id="author">Author:</p>
+            <button id="prev" onclick="prevTrack()">prev</button>
+            <button id="play" onclick="pausePlay()">pause</button>
+            <button id="next" onclick="nextTrack()">next</button>
+        </div>
+        <div id="reflinks">
+            <a href="https://github.com/WJurgiel" target="_blank" title="My github 😀"><img id="github" widt="64" height="64" src="./github.png" alt="my github"></a>
+        </div>
+    </div>
+</body>
+</html>
